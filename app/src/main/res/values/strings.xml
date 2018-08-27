@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Whats\'up</string>
+    <string name="home_image">Logo</string>
+    <string name="login_title">Page d\'authentification</string>
+    <string name="login_email">Email...</string>
+    <string name="login_passwd">Password...</string>
+    <string name="todo">image</string>
+    <string name="login_btn">Connexion</string>
+    <string name="reg_btn">Valider</string>
+    <string name="link_reg">Nouveau Compte</string>
+    <string name="link_login">Deja un Compte?</string>
+    <string name="reg_passwd">Confirm password...</string>
+    <string name="reg_email">Email...</string>
+    <string name="reg_title">Page d\'enregistrement</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_setting">Parametres</string>
+    <string name="menu_logout">Deconneter</string>
+    <string name="setting_name">Entrer un Nom</string>
+    <string name="setting_btn">Valider</string>
+    <string name="bottom_home_menu">Acceuil</string>
+    <string name="home_icon_dashboard">Complements</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="complement_blank_fragment">Hello Complement fragment</string>
+    <string name="home_blank_fragment">Hello Home fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_image">add_image</string>
+    <string name="title_post">Ajouter un titre a  votre publication</string>
+    <string name="desc_post">Ajouter une description a votre Publication</string>
+    <string name="post_add_btn">Publier</string>
+    <string name="post_user_name">Utilisateur</string>
+    <string name="post_date">Date de publication</string>
+    <string name="todo_post">image_post</string>
+    <string name="title_post_show">blablablablablablablblablbalblablbalblabblablbalblablblablblablbalblablablaba</string>
+    <string name="user_name_post">User Name</string>
+    <string name="dateHome_post_view">Date de publication</string>
+    <string name="titleHome_post_view">Titre de la Publication</string>
+</resources>

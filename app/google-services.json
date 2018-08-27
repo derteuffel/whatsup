@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "444879708076",
+    "firebase_url": "https://whatsup-4b857.firebaseio.com",
+    "project_id": "whatsup-4b857",
+    "storage_bucket": "whatsup-4b857.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444879708076:android:aa8cfe9fa75e3490",
+        "android_client_info": {
+          "package_name": "derteuffel.com.whatsup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444879708076-7g1bigh74gj2sblv679c3jm4oq1u3u6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "derteuffel.com.whatsup",
+            "certificate_hash": "892d69a620b19229a5824cdc107b1a6131538d88"
+          }
+        },
+        {
+          "client_id": "444879708076-10r2lds3gq4ki8vg4rtudvsf2q6rnaat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "derteuffel.com.whatsup",
+            "certificate_hash": "5261bd7f2c8efbad79f4035da282cdfee8e129ae"
+          }
+        },
+        {
+          "client_id": "444879708076-ut20sol4n15kqv72jnha4l5loahluj1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAymRL5y-ShgixgUyBOkEa13ZFYBIguwsw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444879708076-ut20sol4n15kqv72jnha4l5loahluj1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

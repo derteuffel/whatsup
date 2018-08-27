@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home_menu"
+        android:icon="@mipmap/home_icon_bottom"
+        android:title="@string/bottom_home_menu"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/dashbord_menu_bottom"
+        android:icon="@mipmap/dashboard_icon_bottom"
+        android:title="@string/home_icon_dashboard"
+        app:showAsAction="always" />
+</menu>
