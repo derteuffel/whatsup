@@ -96,7 +96,7 @@ public class ComplementFragment extends Fragment {
 
         firebaseFirestore=FirebaseFirestore.getInstance();
 
-        _post_list_view.addOnScrollListener(new RecyclerView.OnScrollListener() {
+     /*   _post_list_view.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
@@ -108,15 +108,15 @@ public class ComplementFragment extends Fragment {
                         loadMorePost();
                 }
             }
-        });
+        });*/
 
-            Query firstQuery= firebaseFirestore.collection("Posts").orderBy("timeStamp", Query.Direction.DESCENDING).limit(3);
+            Query firstQuery= firebaseFirestore.collection("Posts").orderBy("timeStamp", Query.Direction.DESCENDING);
 
         firstQuery.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(QuerySnapshot documentSnapshots, FirebaseFirestoreException e) {
 
-                lastVisible= documentSnapshots.getDocuments().get(documentSnapshots.size() -1);
+               //  lastVisible= documentSnapshots.getDocuments().get(documentSnapshots.size() -1);
 
                 for (DocumentChange doc: documentSnapshots.getDocumentChanges()){
 
@@ -138,7 +138,7 @@ public class ComplementFragment extends Fragment {
         return view;
     }
 
-    public void loadMorePost(){
+   /* public void loadMorePost(){
         Query nextQuery= firebaseFirestore.collection("Posts")
                 .orderBy("timeStamp", Query.Direction.DESCENDING)
                 .startAfter(lastVisible)
@@ -155,7 +155,7 @@ public class ComplementFragment extends Fragment {
 
                 for (DocumentChange doc: documentSnapshots.getDocumentChanges()){
 
-                    if (doc.getType()==DocumentChange.Type.ADDED){
+                     if (doc.getType()==DocumentChange.Type.ADDED){
                         PostStudent postStudent= doc.getDocument().toObject(PostStudent.class);
 
                         _post_list.add(postStudent);
@@ -168,7 +168,7 @@ public class ComplementFragment extends Fragment {
             }
         });
 
-    }
+    }*/
 
 
 

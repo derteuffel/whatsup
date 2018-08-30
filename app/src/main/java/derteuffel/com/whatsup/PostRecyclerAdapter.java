@@ -46,7 +46,7 @@ public class PostRecyclerAdapter extends RecyclerView.Adapter<PostRecyclerAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
 
         String title_data = _post_list.get(position).getTitle();
         holder.setTitleText(title_data);
@@ -67,7 +67,7 @@ public class PostRecyclerAdapter extends RecyclerView.Adapter<PostRecyclerAdapte
                String userName= task.getResult().getString("name");
                String userImage= task.getResult().getString("image");
 
-               holder.setUserData(userName,userImage);
+               holder.setUserData(userName, userImage);
            }else {
                //Firebase Exception
            }
@@ -125,15 +125,15 @@ public class PostRecyclerAdapter extends RecyclerView.Adapter<PostRecyclerAdapte
 
         }
 
-        public void setUserData(String name, String image){
-            post_user_name_view=mView.findViewById(R.id.postHome_user_name);
-            post_user_image_view= mView.findViewById(R.id.mainHome_image_view);
+        public void setUserData(String user_name, String imageView){
+            post_user_name_view=mView.findViewById(R.id.post_user_name);
+            post_user_image_view= mView.findViewById(R.id.post_user_image);
 
             RequestOptions placeHolderOption= new RequestOptions();
             placeHolderOption.placeholder(R.drawable.ic_launcher_back);
 
-            Glide.with(context).applyDefaultRequestOptions(placeHolderOption).load(image).into(post_user_image_view);
-            post_user_name_view.setText(name);
+            Glide.with(context).applyDefaultRequestOptions(placeHolderOption).load(imageView).into(post_user_image_view);
+            post_user_name_view.setText(user_name);
 
         }
     }
